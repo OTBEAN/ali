@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuctionHub - Auctions</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">AuctionHub</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="../../index.html" class="hover:text-gray-400">Home</a></li>
+          <li><a href="auction.html" class="hover:text-gray-400">Auctions</a></li>
+          <li><a href="sell.html" class="hover:text-gray-400">Sell</a></li>
+          <li><a href="dashboard.html" class="hover:text-gray-400">Dashboard</a></li>
+          <li><a href="login.html" class="hover:text-gray-400">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <body class="bg-gray-100 bg-cover bg-center" style="background-image: url('../../assests/images/premium_photo-1661729685861-6d1c647e71fb.avif');">
+
+
+  <style>
+    body {
+      background-image: url('../../assests/images/premium_photo-1661729685861-6d1c647e71fb.avif');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+  
+
+  <!-- Auctions Section -->
+  <section class="container mx-auto py-10">
+    <h2 class="text-3xl font-bold mb-6">Live Auctions</h2>
+    <div class="mb-6">
+      <input type="text" id="search" placeholder="Search for items..." class="w-full p-2 border rounded-lg mb-4">
+      <div class="flex space-x-4">
+        <select id="category" class="p-2 border rounded-lg">
+          <option value="">All Categories</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Fashion">Fashion</option>
+          <option value="Furniture">Furniture</option>
+        </select>
+        <input type="number" id="minPrice" placeholder="Min Price" class="p-2 border rounded-lg">
+        <input type="number" id="maxPrice" placeholder="Max Price" class="p-2 border rounded-lg">
+        <button id="applyFilters" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Apply Filters</button>
+      </div>
+    </div>
+    <div id="auction-container" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-10">
+    <div class="container mx-auto text-center">
+      <div class="space-x-4 mb-4">
+        <a href="#about" class="hover:text-gray-400">About Us</a>
+        <a href="#contact" class="hover:text-gray-400">Contact</a>
+        <a href="#terms" class="hover:text-gray-400">Terms & Conditions</a>
+      </div>
+      <p>&copy; 2023 AuctionHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Include JavaScript -->
+  <script type="module">
+    import { auctions, filterAuctions, renderAuctions } from "../js/auction.js";
+
+    const auctionContainer = document.getElementById("auction-container");
+    const searchInput = document.getElementById("search");
+    const categorySelect = document.getElementById("category");
+    const minPriceInput = document.getElementById("minPrice");
+    const maxPriceInput = document.getElementById("maxPrice");
+    const applyFiltersButton = document.getElementById("applyFilters");
+
+    // Initial render
+    renderAuctions(auctions, auctionContainer);
+
+    // Filter functionality
+    applyFiltersButton.addEventListener("click", () => {
+      const category = categorySelect.value;
+      const minPrice = parseFloat(minPriceInput.value);
+      const maxPrice = parseFloat(maxPriceInput.value);
+      const filteredAuctions = filterAuctions(auctions, category, minPrice, maxPrice);
+      renderAuctions(filteredAuctions, auctionContainer);
+    });
+  </script>
+</body>
+</html>

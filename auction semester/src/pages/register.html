@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuctionHub - Register</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">AuctionHub</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="../../index.html" class="hover:text-gray-400">Home</a></li>
+          <li><a href="../pages/login.html" class="hover:text-gray-400">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Registration Form -->
+  <section class="container mx-auto py-10">
+    <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold mb-6 text-center">Register</h2>
+      <form>
+        <div class="mb-4">
+          <label class="block text-gray-700">Email</label>
+          <input type="email" placeholder="Enter your email" class="w-full p-2 border rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Phone Number</label>
+          <input type="tel" placeholder="Enter your phone number" class="w-full p-2 border rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Password</label>
+          <input type="password" placeholder="Create a password" class="w-full p-2 border rounded-lg" required>
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700">Confirm Password</label>
+          <input type="password" placeholder="Confirm your password" class="w-full p-2 border rounded-lg" required>
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Register</button>
+      </form>
+      <p class="mt-4 text-center text-gray-600">Already have an account? <a href="login.html" class="text-blue-500">Login here</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-10">
+    <div class="container mx-auto text-center">
+      <div class="space-x-4 mb-4">
+        <a href="#about" class="hover:text-gray-400">About Us</a>
+        <a href="#contact" class="hover:text-gray-400">Contact</a>
+        <a href="#terms" class="hover:text-gray-400">Terms & Conditions</a>
+      </div>
+      <p>&copy; 2023 AuctionHub. All rights reserved.</p>
+    </div>
+  </footer>
+  <body class="bg-gray-100 bg-cover bg-center" style="background-image: url('../../assests/images/premium_photo-1661729685861-6d1c647e71fb.avif');">
+
+
+    <style>
+      body {
+        background-image: url('../../assests/images/premium_photo-1661729685861-6d1c647e71fb.avif');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+    </style>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuctionHub - Sell</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">AuctionHub</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="../../index.html" class="hover:text-gray-400">Home</a></li>
+          <li><a href="../pages/auction.html" class="hover:text-gray-400">Auctions</a></li>
+          <li><a href="../pages/sell.html" class="hover:text-gray-400">Sell</a></li>
+          <li><a href="../pages/dashboard.html" class="hover:text-gray-400">Dashboard</a></li>
+          <li><a href="../pages/login.html" class="hover:text-gray-400">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sell Section -->
+  <section class="container mx-auto py-10">
+    <h2 class="text-3xl font-bold mb-6">Sell Your Items</h2>
+    <form class="bg-white p-6 rounded-lg shadow-lg">
+      <input type="text" placeholder="Item Title" class="w-full p-2 mb-4 border rounded-lg">
+      <textarea placeholder="Item Description" class="w-full p-2 mb-4 border rounded-lg"></textarea>
+      <input type="number" placeholder="Starting Bid" class="w-full p-2 mb-4 border rounded-lg">
+      <input type="file" accept="image/*" multiple class="mb-4">
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">List Item</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-10">
+    <div class="container mx-auto text-center">
+      <div class="space-x-4 mb-4">
+        <a href="#about" class="hover:text-gray-400">About Us</a>
+        <a href="#contact" class="hover:text-gray-400">Contact</a>
+        <a href="#terms" class="hover:text-gray-400">Terms & Conditions</a>
+      </div>
+      <p>&copy; 2023 AuctionHub. All rights reserved.</p>
+    </div>
+  </footer>
+  <body class="bg-gray-100 bg-cover bg-center" style="background-image: url('../../assests/images/premium_photo-1661729685861-6d1c647e71fb.avif');">
+
+
+    <style>
+      body {
+        background-image: url('../../assests/images/premium_photo-1661729685861-6d1c647e71fb.avif');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+    </style>
+</body>
+</html>

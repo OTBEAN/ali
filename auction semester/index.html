@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuctionHub - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">AuctionHub</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+          <li><a href="./src/pages/auction.html" class="hover:text-gray-400">Auctions</a></li>
+          <li><a href="./src/pages/sell.html" class="hover:text-gray-400">Sell</a></li>
+          <li><a href="./src/pages/dashboard.html" class="hover:text-gray-400">Dashboard</a></li>
+          <li><a href="./src/pages/login.html" class="hover:text-gray-400">Login</a></li>
+          li><a href="./src/pages/register.html" class="hover:text-gray-400">register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-500 text-white py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Find Unique Items at Unbeatable Prices</h2>
+      <form class="flex justify-center">
+        <input type="text" placeholder="Search for items..." class="px-4 py-2 rounded-l-lg w-96">
+        <button type="submit" class="bg-blue-700 px-6 py-2 rounded-r-lg">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-10">
+    <div class="container mx-auto text-center">
+      <div class="space-x-4 mb-4">
+        <a href="#about" class="hover:text-gray-400">About Us</a>
+        <a href="#contact" class="hover:text-gray-400">Contact</a>
+        <a href="#terms" class="hover:text-gray-400">Terms & Conditions</a>
+      </div>
+      <p>&copy; 2023 AuctionHub. All rights reserved.</p>
+    </div>
+  </footer>
+  <body class="bg-gray-100 bg-cover bg-center" style="background-image: url('../../assests/images/premium_photo-1661729685861-6d1c647e71fb.avif');">
+
+
+    <style>
+      body {
+        background-image: url('../../assests/images/premium_photo-1661729685861-6d1c647e71fb.avif');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+    </style>
+</body>
+</html>

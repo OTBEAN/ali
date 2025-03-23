@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuctionHub - Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">AuctionHub</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="../../index.html" class="hover:text-gray-400">Home</a></li>
+          <li><a href="../pages/auction.html" class="hover:text-gray-400">Auctions</a></li>
+          <li><a href="../pages/sell.html" class="hover:text-gray-400">Sell</a></li>
+          <li><a href="../pages/dashboard.html" class="hover:text-gray-400">Dashboard</a></li>
+          <li><a href="../pages/login.html" class="hover:text-gray-400">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Dashboard Section -->
+  <section class="container mx-auto py-10">
+    <h2 class="text-3xl font-bold mb-6">Dashboard</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <section class="container mx-auto py-10">
+            <h2 class="text-3xl font-bold mb-6">List an Item</h2>
+            <form class="bg-white p-6 rounded-lg shadow-lg">
+              <div class="mb-4">
+                <label class="block text-gray-700">Item Title</label>
+                <input type="text" placeholder="Enter item title" class="w-full p-2 border rounded-lg" required>
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700">Description</label>
+                <textarea placeholder="Enter item description" class="w-full p-2 border rounded-lg" required></textarea>
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700">Starting Bid</label>
+                <input type="number" placeholder="Enter starting bid" class="w-full p-2 border rounded-lg" required>
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700">Auction Duration</label>
+                <input type="datetime-local" class="w-full p-2 border rounded-lg" required>
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700">Upload Images</label>
+                <input type="file" accept="image/*" multiple class="w-full p-2 border rounded-lg">
+              </div>
+              <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">List Item</button>
+            </form>
+          </section>
+
+      <!-- Active Listings -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold mb-4">Active Listings</h3>
+        <ul>
+          <li class="mb-2">
+            <p class="text-gray-600">Vintage Camera</p>
+            <p class="text-sm text-gray-500">Current Bid: $50</p>
+          </li>
+          <li class="mb-2">
+            <p class="text-gray-600">Smart Watch</p>
+            <p class="text-sm text-gray-500">Current Bid: $120</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Bidding History -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold mb-4">Bidding History</h3>
+        <ul>
+          <li class="mb-2">
+            <p class="text-gray-600">Vintage Camera</p>
+            <p class="text-sm text-gray-500">Your Bid: $45</p>
+          </li>
+          <li class="mb-2">
+            <p class="text-gray-600">Smart Watch</p>
+            <p class="text-sm text-gray-500">Your Bid: $110</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Account Settings -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold mb-4">Account Settings</h3>
+        <form>
+          <label class="block mb-2">Email</label>
+          <input type="email" value="user@example.com" class="w-full p-2 mb-4 border rounded-lg">
+          <label class="block mb-2">Password</label>
+          <input type="password" placeholder="Change Password" class="w-full p-2 mb-4 border rounded-lg">
+          <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Save Changes</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-10">
+    <div class="container mx-auto text-center">
+      <div class="space-x-4 mb-4">
+        <a href="#about" class="hover:text-gray-400">About Us</a>
+        <a href="#contact" class="hover:text-gray-400">Contact</a>
+        <a href="#terms" class="hover:text-gray-400">Terms & Conditions</a>
+      </div>
+      <p>&copy; 2023 AuctionHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <body class="bg-gray-100 bg-cover bg-center" style="background-image: url('../../assests/images/premium_photo-1661729685861-6d1c647e71fb.avif');">
+
+
+    <style>
+      body {
+        background-image: url('../../assests/images/premium_photo-1661729685861-6d1c647e71fb.avif');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+    </style>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuctionHub - Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('../../assests/images/premium_photo-1661729685861-6d1c647e71fb.avif');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <body class="bg-gray-100 bg-cover bg-center" style="background-image: url('../../assests/images/premium_photo-1661729685861-6d1c647e71fb.avif');"></body>
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">AuctionHub</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="../../index.html" class="hover:text-gray-400">Home</a></li>
+          <li><a href="../pages/auction.html" class="hover:text-gray-400">Auctions</a></li>
+          <li><a href="../pages/sell.html" class="hover:text-gray-400">Sell</a></li>
+          <li><a href="../pages/dashboard.html" class="hover:text-gray-400">Dashboard</a></li>
+          <li><a href="../pages/login.html" class="hover:text-gray-400">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Login Section -->
+  <section class="bg-login py-20">
+    <div class="container mx-auto">
+      <div class="max-w-md mx-auto bg-white bg-opacity-90 p-8 rounded-lg shadow-lg">
+        <div class="text-center mb-6">
+          <img src="https://via.placeholder.com/100" alt="AuctionHub Logo" class="mx-auto mb-4 rounded-full">
+          <h2 class="text-3xl font-bold">Login</h2>
+        </div>
+        <form>
+          <div class="mb-4">
+            <label class="block text-gray-700">Email</label>
+            <input type="email" placeholder="Enter your email" class="w-full p-2 border rounded-lg">
+          </div>
+          <div class="mb-6">
+            <label class="block text-gray-700">Password</label>
+            <input type="password" placeholder="Enter your password" class="w-full p-2 border rounded-lg">
+          </div>
+          <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Login</button>
+        </form>
+        <p class="mt-4 text-center text-gray-600">Don't have an account? <a href="register.html" class="text-blue-500">Sign up</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-10">
+    <div class="container mx-auto text-center">
+      <div class="space-x-4 mb-4">
+        <a href="#about" class="hover:text-gray-400">About Us</a>
+        <a href="#contact" class="hover:text-gray-400">Contact</a>
+        <a href="#terms" class="hover:text-gray-400">Terms & Conditions</a>
+      </div>
+      <p>&copy; 2023 AuctionHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
